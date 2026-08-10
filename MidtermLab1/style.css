@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+:root {
+  --accent-color: #BA2360;
+}
+html{
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+nav,h1,h2{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+section{
+    display: flex;
+}
+section [class^="container"] {
+  padding: 4rem 2rem;
+  min-height: 100vh;
+  align-content: center;
+  
+}
+@media screen and (min-width: 1024px) {
+  section [class^="container"] {
+    padding: 4rem;
+  }
+  nav [class^="container"] {
+    padding: 0 4rem;
+  }
+}
+
+section:not(:first-of-type) {
+  text-align: center;
+  
+}
+
+section:nth-child(2n) {
+  background-color: #E2E8FF;
+}
+
+.container a {
+  color: #000000;
+  text-decoration: none;
+}
+.container a:hover {
+  color: var(--accent-color);
+}
+
+section .card,
+.btn-outline-dark {
+  border: 2px solid #000000;
+  box-shadow: 4px 4px #000000;
+  transition: all 0.4s;
+}
+.btn-outline-dark:hover {
+  box-shadow: 4px 4px var(--accent-color);
+}
+
+/* NAVBAR */
+
+.navbar {
+  background-color: #ffffff;
+}
+
+.navbar-nav .nav-link {
+  color: #000000;
+  font-size: 1.1rem;
+  transition: all 0.5s;
+}
+.navbar-nav .nav-link:hover {
+  color: var(--accent-color);
+}
+@media screen and (min-width: 1024px) {
+  .navbar-nav .nav-item {
+    padding: 0 1rem;
+  }
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+}
+
+/* HERO */
+
+section.hero {
+  padding-top: 72px;
+}
+@media screen and (max-width: 576px) {
+  section.hero {
+    text-align: center;
+  }
+  section.hero img {
+    width: 80%;
+    margin: 0.5rem 0;
+  }
+}
+
+/* SERVICES */
+
+section.skills i {
+  font-size: 2rem;
+  margin: 1rem auto 0;
+  border: 2px solid #000000;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--accent-color);
+}
+
+section .card {
+  max-width: 22rem;
+  margin-inline: auto;
+}
+/* ABOUT */
+@media screen and (min-width: 1024px) {
+  section.about .container,
+  section.projects .container {
+    width: 60%;
+  }
+}
+
+/*projects*/
+
+section.projects .carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+section.projects .carousel-item p {
+  max-width: 80%;
+  border-left: 5px solid var(--accent-color);
+  padding-left: 1rem;
+  text-align: left;
+}
+section.projects .carousel-item h5 {
+  text-align: left;
+}
+section.projects .carousel-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+section.projects .carousel-caption{
+    background-color: #242a42ef;
+    padding: 2.5% 5%;
+    border-radius: .5em;
+}
+
+
+/* CONTACT */
+section.contact .social-media a {
+  padding: 0 0.5rem;
+  font-size: 1.3rem;
+}
+
