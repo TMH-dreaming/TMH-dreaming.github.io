@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+:root {
+    --bg-color: #fdfced;
+    --txt-color: #232204;
+    --primary: #fffea0;
+    --secondary: #283b5f;
+    --accent: #75a3f7;
+    --aside-bg: lightyellow;
+    --section-bg: lightgray;
+    --card-bg: #eee;
+}
+
+html {
+    font-size: clamp(16px, 10px + 1.2vw, 20px);
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--txt-color);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: normal;
+}
+
+.mb {
+    margin-bottom: 0.5rem;
+}
+
+header {
+    background-color: var(--accent);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4rem 0 3rem;
+}
+
+aside {
+    background-color: var(--bg-color);
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    
+}
+.mobile-aside{
+    height:fit-content;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.heroillust-mobile {
+    width: 50%;
+    height: auto;
+    img{
+        display: flex;
+        align-self: center;
+    }
+}
+aside .heroillust {
+    align-self: flex-end;
+}
+
+
+section {
+    background-color: var(--section-bg);
+    padding: 40px;
+    width: 100%;
+    min-height: calc(100vh - 7rem);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+footer {
+    color: var(--bg-color);
+    background-color: var(--secondary);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+header h2 {
+    color: var(--header-hd);
+}
+
+button {
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid gray;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card-img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+}
+li{
+    margin-left: 20px;
+}
+@media (max-width: 768px) {
+    aside {
+        display: none;
+    }
+    .mobile-aside{
+        display: flex;
+    }
+
+    section {
+        width: 100%;
+    }
+}
+/* Tablet Layout */
+@media (min-width: 768px) {
+    aside {
+        flex: 0 0 200px;
+    }
+    .mobile-aside{
+        display: none;
+    }
+
+    section {
+        flex: 0 0 calc(100vw - 200px);
+    }
+}
+
+/* Desktop Layout */
+@media (min-width: 1200px) {
+    aside {
+        flex: 0 0 300px;
+
+    }
+    .mobile-aside{
+        display: none;
+    }
+
+    section {
+        flex: 0 0 calc(100% - 300px);
+    }
+
+    .card {
+        flex: 1;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #121102;
+        --txt-color: #fbfada;
+        --primary: #615f00;
+        --secondary: #a2b5d8;
+        --accent: #08368c;
+        --section-bg: dimgray;
+        --header-hd: lightblue;
+        --card-bg: #222;
+    }
+}
