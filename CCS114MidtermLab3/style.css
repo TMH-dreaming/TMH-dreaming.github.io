@@ -10,6 +10,7 @@
     --bg-color: #fbf9f3;
     --txt-color: #111006;
     --primary: #bfa74d;
+    --bg-primary: #bfa74d;
     --secondary: #9acedb;
     --accent: #7374cc;
     --aside-bg: lightyellow;
@@ -30,7 +31,6 @@ h1, h2, h3, h4, h5, h6 {
 body {
     background-color: var(--bg-color);
     color: var(--txt-color);
-    display: flex;
 }
 .container{
     min-width: 300px;
@@ -93,3 +93,7 @@ main{
     margin-bottom: 10px;
   }
   .btn-login-brain{ color:#fff !important; background-color:var(--accent) !important;}
+
+
+
+ 
