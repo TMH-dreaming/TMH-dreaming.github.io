@@ -1,0 +1,49 @@
+html{
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+    background-color: rgb(63, 51, 63);
+}
+main{
+    margin: 10vh 15vw;
+    padding: 3em;
+    border: 2px solid black;
+    border-radius: 2rem;
+    background-color: rgb(171, 150, 177);
+    box-shadow: 0.5em 0.5em 2em rgba(0, 0, 0, 0.42);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+.tables{
+    display: flex;
+}
+.crd{
+    border: 1px solid black;
+    padding: .5em;
+    min-width: 20vw;
+}
+button{
+    padding: 1em;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: 1em;
+    border: none;
+    border-radius: 1em;
+}
+#btnAdd{
+    background-color: green;
+    color: aliceblue;
+}
+#btnAdd:hover{
+    background-color: darkgreen;
+    cursor: pointer;
+}
+#btnDel{
+    background-color: rgb(227, 16, 47);
+    color: aliceblue;
+}
+#btnDel:hover{
+    background-color: rgb(171, 0, 43);
+    cursor: pointer;
+}
